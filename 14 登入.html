@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!--瀏覽器分頁上顯示的標題-->
+    <title>表單</title>
+
+    <!--設定字元編碼為UTF-8，確保中文顯示正常-->
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+    <!--
+      <html>：HTML文件的根標籤，所有內容都包在裡面
+      <head>：網頁的頭部資訊(不會顯示在頁面上)
+      <title>：瀏覽器分頁顯示的標題文字
+      <meta>：設定字元編碼，這裡使用UTF-8
+      <body>：網頁的主要內容區域，顯示給使用者看的部分
+      <form>：建立表單
+      method屬性指定提交方法，GET表示將資料附加在網址後
+      action屬性指定表單提交目標，這裡為login.php
+      <input>：輸入欄位，type指定類型，name是欄位名稱
+      <input type = text>：文字輸入欄位
+      <input type = password>：密碼輸入欄位(輸入時會隱藏字元)
+      <input type = reset>：重設按鈕，清除表單資料
+      <input type = submit>：送出按鈕，提交表單
+      <br>：換行標籤
+      <p>：段落標籤，將按鈕包起來使其分行排列
+    -->
+
+    <form method="GET" action="login.php">
+      帳號：<input type="text" name="id"><br>
+      密碼：<input type="password" name="pwd"><br>
+      <p>
+        <input type="reset" value="清除">
+        <input type="submit" value="登入">
+      </p>
+    </form>
+  </body>
+</html>
