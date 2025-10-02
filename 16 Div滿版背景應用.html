@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!--瀏覽器分頁上顯示的標題-->
+    <title>div滿版背景應用</title>
+
+    <!--內部CSS，設定div的背景圖片與樣式-->
+    <style>
+
+      /*
+        #bg1：第一張背景圖
+        height：高度設定為1180px
+        background-image：設定背景圖片網址
+        background-size：cover(讓圖片縮放填滿整個容器)
+        background-position：center(讓圖片置中對齊)
+        background-attachment：scroll(圖片跟著頁面捲動)
+      */
+
+      #bg1 {
+        height: 1180px;
+        background-image: url("https://pic.616pic.com/bg_w1180/00/04/29/OQz6uoIOQm.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+      }
+
+      /* 第二張背景圖 */
+      #bg2 {
+        height: 511px;
+        background-image: url("https://thumb.photo-ac.com/3f/3fcd0e98091d9fc72981088320c9bcc7_t.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+      }
+
+      /* 第三張背景圖 */
+      #bg3 {
+        height: 454px;
+        background-image: url("https://thumb.photo-ac.com/d5/d57dc2cecb2114882678ba16700eea2d_t.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!--
+      使用三個<div>區塊分別套用不同背景圖
+      當畫面捲動時，背景會隨之滾動
+    -->
+
+    <div id="bg1"></div>
+    <div id="bg2"></div>
+    <div id="bg3"></div>
+  </body>
+</html>
