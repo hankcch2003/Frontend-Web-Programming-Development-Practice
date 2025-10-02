@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!--瀏覽器分頁上顯示的標題-->
+    <title>CSS</title>
+
+    <!--設定字元編碼為UTF-8，確保中文顯示正常-->
+    <meta charset="utf-8">
+
+    <!--external外部CSS-->
+    <!--使用<link>標籤引入外部CSS檔案，這裡是import.css-->
+
+    <link rel="stylesheet" href="import.css">
+
+    <!--internal內部CSS-->
+    <!--使用<style>標籤直接在HTML裡寫CSS-->
+
+    <style>
+      h2 {
+        color: green; /* 將所有h2標籤文字顏色設為綠色 */
+      }
+    </style>
+  </head>
+  <body>
+
+    <!--inline行內CSS-->
+    <!--在標籤內直接用style屬性設定樣式-->
+
+    <h1 style="color:red;">這是甚麼顏色</h1> <!--文字會顯示為紅色-->
+
+    <h2>這是甚麼顏色</h2> <!--文字會是綠色，因為internal CSS設定-->
+
+    <h3>這是甚麼顏色</h3> <!--沒有特別設定，使用瀏覽器預設顏色(通常是黑色)-->
+
+    <!--
+      <html>：HTML文件的根標籤，所有內容都包在裡面
+      <head>：網頁的頭部資訊(不會顯示在頁面上)
+      <title>：瀏覽器分頁顯示的標題文字
+      <meta>：設定字元編碼，這裡使用UTF-8
+      <link>：引入外部CSS檔案
+      <style>：內部CSS標籤，可直接在HTML裡寫CSS
+      <body>：網頁的主要內容區域，顯示給使用者看的部分
+      <h1>, <h2>, <h3>：不同層級的標題標籤
+      style屬性：行內CSS，直接在元素標籤內設定樣式
+    -->
+
+  </body>
+</html>
