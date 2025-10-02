@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!--瀏覽器分頁上顯示的標題-->
+    <title>註冊</title>
+
+    <!--設定字元編碼為UTF-8，確保中文顯示正常-->
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+    <!--
+      <html>：HTML文件的根標籤，所有內容都包在裡面
+      <head>：網頁的頭部資訊(不會顯示在頁面上)
+      <title>：瀏覽器分頁顯示的標題文字
+      <meta>：設定字元編碼，這裡使用UTF-8
+      <body>：網頁的主要內容區域，顯示給使用者看的部分
+      <form>：建立表單
+      method屬性指定提交方法，GET表示將資料附加在網址後
+      action屬性指定表單提交目標，這裡為registration.php
+      <input>：輸入欄位，type指定類型，name是欄位名稱
+      <input type = text>：文字輸入欄位
+      <input type = password>：密碼輸入欄位(輸入內容會隱藏)
+      <input type = radio>：單選按鈕，多個中只能選一個
+      <input type = checkbox>：複選方塊，可以多選
+      <select>：下拉選單，<option>是其中的選項
+      <textarea>：多行文字輸入欄位，cols = 欄寬，rows = 行數
+      <input type=reset>：清除按鈕，重設整個表單內容
+      <input type=submit>：送出按鈕，將表單資料提交到指定action
+      <br>：換行標籤
+      <p>：段落標籤，將按鈕分行排列
+    -->
+
+    <form method="GET" action="registration.php">
+      姓名：<input type="text" name="id"><br>
+      密碼：<input type="password" name="pwd"><br>
+
+      性別：
+      <input type="radio" name="sex" value="M" checked>男
+      <input type="radio" name="sex" value="F">女 <br>
+
+      興趣：
+      <input type="checkbox" name="interest" value="sing" checked>唱歌
+      <input type="checkbox" name="interest" value="movie">看電影
+      <input type="checkbox" name="interest" value="tv">看電視
+      <br>
+
+      居住地：
+      <select name="county">
+        <option value="hsinchu" selected>新竹</option>
+        <option value="taoyuan">桃園</option>     
+        <option value="miaoli">苗栗</option>
+        <option value="others">台北</option>
+      </select><br>
+
+      自我介紹：<br>
+      <textarea name="resume" cols="40" rows="10">請輸入自傳：</textarea>
+
+      <p>
+        <input type="reset" value="清除">
+        <input type="submit" value="註冊">
+      </p>
+    </form>
+  </body>
+</html>
