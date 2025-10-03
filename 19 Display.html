@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!--瀏覽器分頁上顯示的標題-->
+    <title>Display</title>
+
+    <!--內部CSS，設定Flexbox排版與元素樣式-->
+    <style>
+
+      /*
+        .d1：
+          高度300px
+          背景黑色
+          display：flex(啟用彈性盒模型)
+          justify-content：space-around(子項目間距均勻分配並環繞)
+          align-items：center(子項目垂直置中對齊)
+
+        .d2：
+          高度100px，寬度100px
+          背景黃色
+          紅色1px實線邊框
+      */
+
+      .d1 {
+        height: 300px;
+        background-color: black;
+        display: flex;
+        justify-content: space-around; /* 其他常用值：flex-start, flex-end, center, space-between */
+        align-items: center;
+      }
+
+      .d2 {
+        height: 100px;
+        width: 100px;
+        background-color: yellow;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!--
+      外層區塊.d1使用彈性盒模型包住三個.d2
+      三個黃色區塊在黑底中水平均勻分布並垂直置中
+    -->
+
+    <div class="d1">
+      <div class="d2"></div>
+      <div class="d2"></div>
+      <div class="d2"></div>
+    </div>
+  </body>
+</html>
